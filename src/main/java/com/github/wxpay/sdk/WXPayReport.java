@@ -205,12 +205,14 @@ public class WXPayReport {
     }
 
 
-    @Deprecated
+    @SuppressWarnings("unused")
+	@Deprecated
     private void reportSync(final String data) throws Exception {
         httpRequest(data, DEFAULT_CONNECT_TIMEOUT_MS, DEFAULT_READ_TIMEOUT_MS);
     }
 
-    @Deprecated
+    @SuppressWarnings("unused")
+	@Deprecated
     private void reportAsync(final String data) throws Exception {
         new Thread(new Runnable() {
             public void run() {
